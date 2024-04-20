@@ -1,12 +1,12 @@
 {
-  "name": "@repo/ui",
+  "name": "@medprep/ui",
   "version": "0.0.0",
   "sideEffects": [
     "**/*.css"
   ],
   "exports": {
     "./styles.css": "./dist/index.css",
-    "./card": "./src/card.tsx"
+    "./components": "./src/components/ui/index.ts"
   },
   "license": "MIT",
   "scripts": {
@@ -19,14 +19,27 @@
     "react": "^18.2.0"
   },
   "devDependencies": {
-    "@repo/eslint-config": "*",
-    "@repo/tailwind-config": "*",
-    "@repo/typescript-config": "*",
+    "@medprep/eslint-config": "*",
+    "@medprep/tailwind-config": "*",
+    "@medprep/typescript-config": "*",
     "@types/react": "^18.2.61",
     "autoprefixer": "^10.4.18",
     "postcss": "^8.4.35",
     "react": "^18.2.0",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.3.4",
+    "@radix-ui/react-label": "^2.0.2",
+    "@radix-ui/react-slot": "^1.0.2",
+    "@radix-ui/react-toast": "^1.1.5",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "lucide-react": "^0.372.0",
+    "react-hook-form": "^7.51.3",
+    "tailwind-merge": "^2.3.0",
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.22.5"
   }
 }

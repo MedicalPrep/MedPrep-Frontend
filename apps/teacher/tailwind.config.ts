@@ -1,14 +1,15 @@
-import type { Config } from "tailwindcss"
+// tailwind config is required for editor support
 
-const config = {
+import type { Config } from "tailwindcss";
+import sharedConfig from "@medprep/tailwind-config";
+
+const config: Pick<
+  Config,
+  "content" | "presets" | "darkMode" | "theme" | "plugins"
+> = {
+  content: ["./src/app/**/*.tsx"],
+  presets: [sharedConfig],
   darkMode: ["class"],
-  content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
-  prefix: "ui-",
   theme: {
     container: {
       center: true,
@@ -75,6 +76,6 @@ const config = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+};
 
-export default config
+export default config;
