@@ -18,8 +18,10 @@ export default function RootLayout({
 }): JSX.Element {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
-      <Toaster />
+      <body className={inter.className}>
+        <main>{children}</main>
+        <Toaster />
+      </body>
     </html>
   );
 }
