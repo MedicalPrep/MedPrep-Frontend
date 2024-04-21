@@ -14,7 +14,7 @@ This is the frontend repository for MedPrep that will contain all the frontend a
 ## GETTING STARTED
 
 1. Make sure to install the most recent version of Node.js on your machine.
-2. Run `npm install` in Kojaah-Frontend folder to install the dependencies.
+2. Run `npm install` in MEDPREP-Frontend folder to install the dependencies.
 3. This is a npm worskspace project thus each project in the `apps` and `libs` folder contains workspaaces that have their own respective package.json file with scripts that can be run by invoking `[script] -w [workspace name]`
    for example:
 
