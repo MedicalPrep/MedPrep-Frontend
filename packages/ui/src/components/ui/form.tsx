@@ -70,7 +70,7 @@ const FormItem = React.forwardRef<
 
   return (
     <FormItemContext.Provider value={{ id }}>
-      <div className={cn("ui-space-y-2", className)} ref={ref} {...props} />
+      <div className={className} ref={ref} {...props} />
     </FormItemContext.Provider>
   );
 });
@@ -84,7 +84,8 @@ const FormLabel = React.forwardRef<
 
   return (
     <Label
-      className={cn(error && "ui-text-destructive", className)}
+      //className={cn(error && "ui-text-destructive", className)}
+      className={className}
       htmlFor={formItemId}
       ref={ref}
       {...props}

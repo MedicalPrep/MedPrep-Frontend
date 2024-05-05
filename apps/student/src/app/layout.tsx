@@ -1,4 +1,5 @@
 import { Toaster } from "@medprep/ui/components";
+import Navbar from "../components/Navbar"
 import "@medprep/ui/styles.css";
 import "./globals.css";
 import type { Metadata } from "next";
@@ -19,7 +20,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main>{children}</main>
+        <main className="h-screen flex flex-col justify-center items-center">
+          <Navbar />
+          {children}
+        </main>
         <Toaster />
       </body>
     </html>
